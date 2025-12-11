@@ -4,12 +4,12 @@
   "name": "Zoftware",
   "colors": {
     "primary": "#F44667",
-    "light": "#28B8E4",
-    "dark": "#2C4E9B"
+    "light": "#FF6B8A",
+    "dark": "#E63E5E"
   },
   "favicon": "https://zoftware-logo.s3.ap-south-1.amazonaws.com/logo.svg",
   "navigation": {
-    "pages": ["index", "changelog"]
+    "pages": ["index", "release-notes"]
   },
   "logo": {
     "light": "https://zoftware-logo.s3.ap-south-1.amazonaws.com/logo.svg",

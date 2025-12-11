@@ -1,0 +1,107 @@
+---
+title: "Release Notes"
+description: "Stay up to date with the latest Zoftware updates and releases"
+---
+
+Keep track of our latest features, improvements, and bug fixes. Each update includes detailed information about what's new and how it benefits our users.
+
+<Update label="November 2025">
+### Search and Discovery
+
+- Implemented semantic search across products, categories, and companies, enabling more accurate and context-aware search results across the platform
+- Added embedding generation scripts to support future use cases involving different embedding models and embedding stores
+- Launched a new quick search UI in the hero section and top bar with three dedicated sections for products, categories, and companies, available on both mobile and desktop
+
+### Performance and Stability
+
+- Improved homepage load times and overall performance, increasing Lighthouse performance scores from approximately 50–60 to 80–90
+- Fixed a critical backend crash issue which led to downtimes in the following endpoint
+- Added a backend caching layer for frequently accessed endpoints to reduce database load and prevent recurring 5xx failures caused by high traffic
+
+### Zain Chatbot Panel
+
+- Added caching for common greeting messages such as "hi" and "hello" to avoid unnecessary compute calls
+- Reduced response time for product recommendations to improve user experience during discovery
+- Fixed multiple UI alignment issues for better visual consistency
+
+### Vendors Onboarding
+
+#### Vendors Onboarding API
+
+- Built an AI-based vendor crawler that fetches and structures all product data of a vendor using only the vendor website URL (e.g., https://linear.app/), significantly reducing manual onboarding effort
+
+#### Vendors Onboarding Frontend
+
+- Implemented vendors onboarding flow v0 in the vendors dashboard, including:
+  - Vendor domain data scraping
+  - Editable product details
+  - Product summary page for final review before submission
+- This streamlines the overall vendor onboarding experience from data discovery to submission
+
+### Scraper Engines and Product Ingestion
+
+- Built crawler engines to scrape complete product catalogues from different public resources
+- Implemented AI-based crawlers and scrapers to enhance and enrich scraped product data
+- Launched a product ingestion platform for the data team to review, validate, and approve crawled and scraped products before they move into the system
+- **Note:** This module is currently live in the dev environment at https://product-ingestion-client.vercel.app/ and is undergoing internal testing and validation before production rollout
+
+### Admin and Platform Integrations
+
+- Integrated Vapi call data into the admin panel for visibility into call activity
+- Integrated Factor with Apollo in the lead-generation scheduler for automated enrichment
+- Implemented the company page on both the vendor and admin panels
+- Created, tested, and benchmarked the User API Postman collection for streamlined API validation
+
+### Infrastructure and DevOps
+
+- Scheduler updated, migrated, and verified on the GCP servers
+- Backend Docker environment fully configured for consistent builds and deployments
+- Implemented GCP Secret Manager for secure environment variable management
+- Enabled automated Docker image builds and Cloud Run deployments to streamline CI/CD
+
+### Frontend Platform
+
+#### Rewards Flow
+
+- The rewards flow page has been successfully implemented on the frontend platform with an improved user experience and smoother navigation
+- Added a new rewards hero section on the landing page highlighting:
+  - 5% rewards coins
+  - Instant redemption
+  - Supported brands
+- Improved accessibility using dynamic ARIA labels
+- Enhanced scrolling behavior for smoother interactions
+
+#### Help Centre and Content
+
+- Added Help Center CTAs to the About Us page footer and Vendors page
+
+### User Dashboard
+
+#### Resources
+
+- White paper section added for quick access to core reference material
+- Get consultation option included, allowing users to talk to the Zain AI consultant for immediate assistance
+- Custom request flow introduced so users can submit their requirements along with details and budget
+
+#### RFP History
+
+- Added a consolidated view of all proposal requests
+- Included tabs for All, In Progress, and Completed states for easier tracking and status management
+- Improves clarity and helps users monitor progress efficiently
+
+#### My Favorites
+
+- Implemented a unified view of all saved products
+- Added automatic pagination to provide a cleaner, more manageable browsing experience for long lists
+
+#### Recent Chats
+
+- Displays previous conversations with timestamps for context
+- Each chat includes a concise preview to make identification faster
+- Helps users revisit earlier discussions without friction
+
+### Notifications and Analytics
+
+- Added a placeholder section for upcoming notifications
+- Improved analytics tracking to better understand user activity and platform engagement
+</Update>
