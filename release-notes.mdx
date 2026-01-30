@@ -6,145 +6,143 @@ description: "Stay up to date with the latest Zoftware updates and releases"
 Keep track of our latest features, improvements, and bug fixes. Each update includes detailed information about what's new and how it benefits our users.
 
 <Update label="December 2025">
+  ### Partner API System
 
-### Partner API System
+  - Built reusable partner API infrastructure with category-based scope management to control data access levels
+  - Peko integrated as the first partner using this system
+  - Designed for easy replication with future partners
+  - Includes automated Swagger and Postman documentation generation
 
-- Built reusable partner API infrastructure with category-based scope management to control data access levels
-- Peko integrated as the first partner using this system
-- Designed for easy replication with future partners
-- Includes automated Swagger and Postman documentation generation
+  ### Database Auditing
 
-### Database Auditing
+  - Implemented DB audit system with Pub/Sub and CDC
+  - Logs all database changes with before/after data and actor information
+  - **Note:** Currently being validated in the test environment.
 
-- Implemented DB audit system with Pub/Sub and CDC
-- Logs all database changes with before/after data and actor information
-- **Note:** Currently under testing in dev environment
+  ### Frontend
 
-### Frontend
+  - Redesigned login and sign-up flows with improved security and usability
+  - Added multi-factor authentication and unified session management
+  - Implemented cookies permission popup for privacy compliance
+  - Added network toaster for real-time connectivity status
 
-- Redesigned login and sign-up flows with improved security and usability
-- Added multi-factor authentication and unified session management
-- Implemented cookies permission popup for privacy compliance
-- Added network toaster for real-time connectivity status
+  ### Analytics Infrastructure
 
-### Analytics Infrastructure
+  - Migrated from domestic interaction service to Amplitude
+  - Added scheduler to save daily events to database
+  - Implemented frontend events for tracking product page views and time spent
+  - Generating product analytics insights from stored events
 
-- Migrated from domestic interaction service to Amplitude
-- Added scheduler to save daily events to database
-- Implemented frontend events for tracking product page views and time spent
-- Generating product analytics insights from stored events
+  ### Search Improvements
 
-### Search Improvements
+  - Added hybrid search combining fuzzy and semantic matching
+  - Included match score percentages in search results
+  - Uses simple text search for basic queries and semantic search for complex queries (adoption for v2 pending)
 
-- Added hybrid search combining fuzzy and semantic matching
-- Included match score percentages in search results
-- Uses simple text search for basic queries and semantic search for complex queries (adoption for v2 pending)
+  ### Zain Chatbot
 
-### Zain Chatbot
-
-- Fixed user message alignment
-- Optimized product fetch and display performance
-- Added endpoints to fetch user queries and conversation history from Zain
-
+  - Fixed user message alignment
+  - Optimized product fetch and display performance
+  - Added endpoints to fetch user queries and conversation history from Zain
 </Update>
 
 <Update label="November 2025">
-### Search and Discovery
+  ### Search and Discovery
 
-- Implemented semantic search across products, categories, and companies, enabling more accurate and context-aware search results across the platform
-- Added embedding generation scripts to support future use cases involving different embedding models and embedding stores
-- Launched a new quick search UI in the hero section and top bar with three dedicated sections for products, categories, and companies, available on both mobile and desktop
+  - Implemented semantic search across products, categories, and companies, enabling more accurate and context-aware search results across the platform
+  - Added embedding generation scripts to support future use cases involving different embedding models and embedding stores
+  - Launched a new quick search UI in the hero section and top bar with three dedicated sections for products, categories, and companies, available on both mobile and desktop
 
-### Performance and Stability
+  ### Performance and Stability
 
-- Improved homepage load times and overall performance, increasing Lighthouse performance scores from approximately 50–60 to 80–90
-- Fixed a critical backend crash issue which led to downtimes in the following endpoint
-- Added a backend caching layer for frequently accessed endpoints to reduce database load and prevent recurring 5xx failures caused by high traffic
+  - Improved homepage load times and overall performance, increasing Lighthouse performance scores from approximately 50–60 to 80–90
+  - Fixed a critical backend crash issue which led to downtimes in the following endpoint
+  - Added a backend caching layer for frequently accessed endpoints to reduce database load and prevent recurring 5xx failures caused by high traffic
 
-### Zain Chatbot Panel
+  ### Zain Chatbot Panel
 
-- Added caching for common greeting messages such as "hi" and "hello" to avoid unnecessary compute calls
-- Reduced response time for product recommendations to improve user experience during discovery
-- Fixed multiple UI alignment issues for better visual consistency
+  - Added caching for common greeting messages such as "hi" and "hello" to avoid unnecessary compute calls
+  - Reduced response time for product recommendations to improve user experience during discovery
+  - Fixed multiple UI alignment issues for better visual consistency
 
-### Vendors Onboarding
+  ### Vendors Onboarding
 
-#### Vendors Onboarding API
+  #### Vendors Onboarding API
 
-- Built an AI-based vendor crawler that fetches and structures all product data of a vendor using only the vendor website URL (e.g., https://linear.app/), significantly reducing manual onboarding effort
+  - Built an AI-based vendor crawler that fetches and structures all product data of a vendor using only the vendor website URL (e.g., https://linear.app/), significantly reducing manual onboarding effort
 
-#### Vendors Onboarding Frontend
+  #### Vendors Onboarding Frontend
 
-- Implemented vendors onboarding flow v0 in the vendors dashboard, including:
-  - Vendor domain data scraping
-  - Editable product details
-  - Product summary page for final review before submission
-- This streamlines the overall vendor onboarding experience from data discovery to submission
+  - Implemented vendors onboarding flow v0 in the vendors dashboard, including:
+    - Vendor domain data scraping
+    - Editable product details
+    - Product summary page for final review before submission
+  - This streamlines the overall vendor onboarding experience from data discovery to submission
 
-### Scraper Engines and Product Ingestion
+  ### Scraper Engines and Product Ingestion
 
-- Built crawler engines to scrape complete product catalogues from different public resources
-- Implemented AI-based crawlers and scrapers to enhance and enrich scraped product data
-- Launched a product ingestion platform for the data team to review, validate, and approve crawled and scraped products before they move into the system
-- **Note:** This module is currently live in the dev environment at https://product-ingestion-client.vercel.app/ and is undergoing internal testing and validation before production rollout
+  - Built crawler engines to scrape complete product catalogues from different public resources
+  - Implemented AI-based crawlers and scrapers to enhance and enrich scraped product data
+  - Launched a product ingestion platform for the data team to review, validate, and approve crawled and scraped products before they move into the system
+  - **Note:** This module is currently live in the dev environment at https://product-ingestion-client.vercel.app/ and is undergoing internal testing and validation before production rollout
 
-### Admin and Platform Integrations
+  ### Admin and Platform Integrations
 
-- Integrated Vapi call data into the admin panel for visibility into call activity
-- Integrated Factor with Apollo in the lead-generation scheduler for automated enrichment
-- Implemented the company page on both the vendor and admin panels
-- Created, tested, and benchmarked the User API Postman collection for streamlined API validation
+  - Integrated Vapi call data into the admin panel for visibility into call activity
+  - Integrated Factor with Apollo in the lead-generation scheduler for automated enrichment
+  - Implemented the company page on both the vendor and admin panels
+  - Created, tested, and benchmarked the User API Postman collection for streamlined API validation
 
-### Infrastructure and DevOps
+  ### Infrastructure and DevOps
 
-- Scheduler updated, migrated, and verified on the GCP servers
-- Backend Docker environment fully configured for consistent builds and deployments
-- Implemented GCP Secret Manager for secure environment variable management
-- Enabled automated Docker image builds and Cloud Run deployments to streamline CI/CD
+  - Scheduler updated, migrated, and verified on the GCP servers
+  - Backend Docker environment fully configured for consistent builds and deployments
+  - Implemented GCP Secret Manager for secure environment variable management
+  - Enabled automated Docker image builds and Cloud Run deployments to streamline CI/CD
 
-### Frontend Platform
+  ### Frontend Platform
 
-#### Rewards Flow
+  #### Rewards Flow
 
-- The rewards flow page has been successfully implemented on the frontend platform with an improved user experience and smoother navigation
-- Added a new rewards hero section on the landing page highlighting:
-  - 5% rewards coins
-  - Instant redemption
-  - Supported brands
-- Improved accessibility using dynamic ARIA labels
-- Enhanced scrolling behavior for smoother interactions
+  - The rewards flow page has been successfully implemented on the frontend platform with an improved user experience and smoother navigation
+  - Added a new rewards hero section on the landing page highlighting:
+    - 5% rewards coins
+    - Instant redemption
+    - Supported brands
+  - Improved accessibility using dynamic ARIA labels
+  - Enhanced scrolling behavior for smoother interactions
 
-#### Help Centre and Content
+  #### Help Centre and Content
 
-- Added Help Center CTAs to the About Us page footer and Vendors page
+  - Added Help Center CTAs to the About Us page footer and Vendors page
 
-### User Dashboard
+  ### User Dashboard
 
-#### Resources
+  #### Resources
 
-- White paper section added for quick access to core reference material
-- Get consultation option included, allowing users to talk to the Zain AI consultant for immediate assistance
-- Custom request flow introduced so users can submit their requirements along with details and budget
+  - White paper section added for quick access to core reference material
+  - Get consultation option included, allowing users to talk to the Zain AI consultant for immediate assistance
+  - Custom request flow introduced so users can submit their requirements along with details and budget
 
-#### RFP History
+  #### RFP History
 
-- Added a consolidated view of all proposal requests
-- Included tabs for All, In Progress, and Completed states for easier tracking and status management
-- Improves clarity and helps users monitor progress efficiently
+  - Added a consolidated view of all proposal requests
+  - Included tabs for All, In Progress, and Completed states for easier tracking and status management
+  - Improves clarity and helps users monitor progress efficiently
 
-#### My Favorites
+  #### My Favorites
 
-- Implemented a unified view of all saved products
-- Added automatic pagination to provide a cleaner, more manageable browsing experience for long lists
+  - Implemented a unified view of all saved products
+  - Added automatic pagination to provide a cleaner, more manageable browsing experience for long lists
 
-#### Recent Chats
+  #### Recent Chats
 
-- Displays previous conversations with timestamps for context
-- Each chat includes a concise preview to make identification faster
-- Helps users revisit earlier discussions without friction
+  - Displays previous conversations with timestamps for context
+  - Each chat includes a concise preview to make identification faster
+  - Helps users revisit earlier discussions without friction
 
-### Notifications and Analytics
+  ### Notifications and Analytics
 
-- Added a placeholder section for upcoming notifications
-- Improved analytics tracking to better understand user activity and platform engagement
+  - Added a placeholder section for upcoming notifications
+  - Improved analytics tracking to better understand user activity and platform engagement
 </Update>
