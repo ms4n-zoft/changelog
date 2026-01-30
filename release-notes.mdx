@@ -5,6 +5,49 @@ description: "Stay up to date with the latest Zoftware updates and releases"
 
 Keep track of our latest features, improvements, and bug fixes. Each update includes detailed information about what's new and how it benefits our users.
 
+<Update label="December 2025">
+
+### Partner API System
+
+- Built reusable partner API infrastructure with category-based scope management to control data access levels
+- Peko integrated as the first partner using this system
+- Designed for easy replication with future partners
+- Includes automated Swagger and Postman documentation generation
+
+### Database Auditing
+
+- Implemented DB audit system with Pub/Sub and CDC
+- Logs all database changes with before/after data and actor information
+- **Note:** Currently under testing in dev environment
+
+### Frontend
+
+- Redesigned login and sign-up flows with improved security and usability
+- Added multi-factor authentication and unified session management
+- Implemented cookies permission popup for privacy compliance
+- Added network toaster for real-time connectivity status
+
+### Analytics Infrastructure
+
+- Migrated from domestic interaction service to Amplitude
+- Added scheduler to save daily events to database
+- Implemented frontend events for tracking product page views and time spent
+- Generating product analytics insights from stored events
+
+### Search Improvements
+
+- Added hybrid search combining fuzzy and semantic matching
+- Included match score percentages in search results
+- Uses simple text search for basic queries and semantic search for complex queries (adoption for v2 pending)
+
+### Zain Chatbot
+
+- Fixed user message alignment
+- Optimized product fetch and display performance
+- Added endpoints to fetch user queries and conversation history from Zain
+
+</Update>
+
 <Update label="November 2025">
 ### Search and Discovery
 
