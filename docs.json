@@ -19,13 +19,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@zoftware.com"
+        "href": "mailto:tech@zoftwarehub.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Get Started",
-      "href": "https://zoftware.com"
+      "href": "https://zoftwarehub.com"
     }
   },
   "contextual": {
