@@ -7,13 +7,13 @@
     "light": "#FF6B8A",
     "dark": "#E63E5E"
   },
-  "favicon": "https://zoftware-logo.s3.ap-south-1.amazonaws.com/logo.svg",
+  "favicon": "/logo/zoftware-mini-logo.svg",
   "navigation": {
     "pages": ["index", "release-notes"]
   },
   "logo": {
-    "light": "https://zoftware-logo.s3.ap-south-1.amazonaws.com/logo.svg",
-    "dark": "https://zoftware-logo.s3.ap-south-1.amazonaws.com/logo.svg"
+    "light": "/logo/zoftware-logo.svg",
+    "dark": "/logo/zoftware-logo.svg"
   },
   "navbar": {
     "links": [
