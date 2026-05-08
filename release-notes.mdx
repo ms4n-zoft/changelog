@@ -5,6 +5,112 @@ description: "Stay up to date with the latest Zoftware updates and releases"
 
 Keep track of our latest features, improvements, and bug fixes. Each update includes detailed information about what's new and how it benefits our users.
 
+<Update label="April 2026">
+  ### Frontend
+
+- Launched a dedicated Strategy page to help users explore business strategy guidance and start AI-assisted recommendations from one place
+- Improved the AI Strategy Assistant with cleaner layouts, clearer messaging, and smoother interactions
+- Made product and category pages faster and easier to browse with better loading states, cleaner navigation, and more reliable comparison links
+- Improved regional and multilingual discovery with cleaner language handling, regional sitemaps, and better page information for search engines
+- Expanded tracking across product pages, categories, language selection, external links, and strategy interactions so teams can better understand what users engage with
+- Improved login and session handling across shared Zoftware experiences, including safer popup checks and more reliable shared login behavior
+- Made the auth popup more configurable, with clearer error messages and options to show or hide login, signup, social login, and forgot-password flows
+
+### Backend & Infrastructure
+
+- Added support-call data sync, recovery, exports, and partner updates so missed or disconnected call records can still be reviewed
+- Improved product duplicate detection by cleaning website URLs, checking products more consistently, and protecting existing product details during updates
+- Added a 90-day limit to large exports so downloads stay stable and easier to manage
+- Added admin activity logging and stronger safety checks around product, feature usage, and audit data
+- Improved email handling with better recipient support, cleaner fallback names, and updated booking links
+- Improved rate limiting, product visibility filtering, deployment configuration, and service dependency handling
+
+### Admin and Reporting
+
+- Added Feature Usage reporting so admins can see which platform features are being used
+- Added Excel exports for user lists and support-call data, making reports easier to share
+- Added Business Dashboard visibility controls so internal teams can manage which business features are available
+- Enabled System Integrator onboarding routes in the admin panel and improved related permissions
+- Improved activity detail views, product-region filters, date validation, dialog sizing, and admin accessibility
+
+### Inventory and Partner Sales
+
+- Added license activation for sales, including license document uploads, access dates, and safer license-data handling
+- Added partner fulfillment updates so partner purchases can be processed and tracked more reliably
+- Added sale types for new purchases, renewals, and cancellations, plus sale status lookup and audit history
+- Simplified pricing setup by moving to one clear pricing option per SKU and tightening billing validation
+- Improved the inventory client with activation screens, sale handling, billing updates, file upload checks, and clearer sales states
+- Expanded Peko sales integration with sale status support, sales validation, purchase-flow documentation, and logo maintenance tools
+
+### RFP Builder
+
+- Added stronger user session management and shared login sync so login state is more consistent across Zoftware tools
+- Switched expert booking links from Calendly to Outlook
+- Added tracking for RFP results and toolkit usage to understand where users need support
+- Improved layouts, forms, inputs, logos, and result-page editing for a cleaner RFP creation experience
+- Added an external Exit link so users can move out of the builder more easily
+
+### AI, Analytics, and Internal Tools
+
+- Added internal usage APIs for the research agent and Zain so teams can review activity with better filters and pagination
+- Improved AI model defaults, validation, and error handling for research workflows
+- Added Amplitude tracking in Zain and safer handling for user identity and session data
+- Improved the Vendor Dashboard product-save flow, product ID handling, image behavior, and booking links
+
+</Update>
+
+<Update label="March 2026">
+  ### Frontend
+
+- Added a notification center with unread counts, service filters, and infinite scrolling so users can keep track of updates more easily
+- Added System Integrator profiles to product pages so buyers can see relevant implementation partners when available
+- Replaced older "Get In Touch" areas on pricing and comparison tables with a clearer Product Support modal
+- Added Arabic and English language support across key components and improved the foundation for locale switching
+- Improved product, category, blog, and search loading with better cached pages, loading skeletons, and faster page refreshes after updates
+- Added broader analytics across navigation, profiles, product cards, product tabs, section views, strategy previews, and support requests
+- Improved RFP history, sidebar behavior, dashboard accordions, accessibility, mobile layout, and right-to-left presentation
+
+### Backend & Infrastructure
+
+- Added a stronger caching layer and caching headers so repeated product and category requests can load faster
+- Connected product analytics to PostHog and improved how analytics are collected, stored, and processed
+- Added notification services, unread counts, and filters to support the new notification center
+- Improved RFP job handling to reduce duplicate jobs, stale writes, and outdated notifications
+- Added database audit logging with admin activity tracking, user context, device information, and location enrichment for better internal traceability
+- Improved email sending with BCC, attachments, normalized recipients, template tracking, and safer delivery behavior
+- Strengthened admin and inventory access rules, browser access checks, database connection retries, and product page refresh behavior
+
+### System Integrator Onboarding Platform
+
+- Added System Integrator onboarding in the admin panel with supporting API integration
+- Added product-page handling for System Integrator profiles so users can discover implementation support alongside relevant products
+- Improved onboarding permissions, verification handling, logo behavior, and component structure for a more stable admin experience
+
+### Inventory and Partner Sales
+
+- Built the new inventory management API and client foundation, including setup flows, catalog views, dashboards, and operational pages
+- Added product-code catalog management, product-specific catalog entries, region-based setup, and unlimited inventory support
+- Added sales recording so purchases can reduce stock correctly and sales can be reviewed from the dashboard
+- Added product search through the inventory system and shared login checks for inventory users
+- Added discount editing, billing disable/delete controls, and clearer pricing behavior
+- Added cloud deployment setup, secure secret handling, and expanded tests for sales, inventory, billing, and setup flows
+- Launched the Peko sandbox experience with product pages, pricing, purchase options, reviews, alternatives, and sale recording
+
+### Peko Partner API
+
+- Added purchase options and sales endpoint support for Peko integrations
+- Added discounted SKU pricing fields and clearer purchase-flow documentation
+- Improved production build configuration, development settings, and inventory service integration
+
+### Zain Chatbot
+
+- Added guided follow-up questions and improved comparison tables so users can compare products with more relevant criteria
+- Improved product recommendation prompts, suggested actions, and mobile-friendly question flows
+- Improved the chat interface, branding assets, routing, and AI integration setup
+- Tightened security and logging by improving authentication checks, reducing sensitive debug output, and improving rate-limit behavior
+
+</Update>
+
 <Update label="February 2026">
   ### Frontend
 
